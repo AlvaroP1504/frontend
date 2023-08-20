@@ -15,5 +15,10 @@
   <h1 class="text-3xl font-bold underline">
     Hello world!
   </h1>
+  <nav>
+
+    <router-link to="/hello-world">Acerca de</router-link>
+  </nav>
+  <RouterView />
 </template>
 
