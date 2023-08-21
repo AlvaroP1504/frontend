@@ -15,9 +15,9 @@ onMounted(() => {
 <template>
     <section class="bg-white relative overflow-x-auto shadow-md sm:rounded-lg mt-48">
         <h2 class="m-5 text-2xl font-extrabold leading-none tracking-tight text-black">
-            {{ book.title }}
+            {{ book.title ?? book.error }}
         </h2>
-        <div class="m-5">
+        <div v-if="book.title" class="m-5">
             <div>
                 <span class="font-bold">Descripción: </span>
                 <span>{{ book.description }}</span>

@@ -1,3 +1,4 @@
+// Cargando componentes con lazy loading
 const BookList = () => import('../view/BookList.vue')
 const BookDetail = () => import('../view/BookDetail.vue')
 
