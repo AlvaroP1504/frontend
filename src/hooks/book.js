@@ -28,12 +28,15 @@ export function useBooks(){
         fetch('http://localhost:5000/books')
         .then(res => res.json())
         .then(data => books.value = data)
+        .catch(err => console.log(err))
     }
 
     function getBook(id){
         fetch(`http://localhost:5000/books/details/${id}`)
         .then(res => res.json())
         .then(data => book.value = data)
+        .catch(err => console.log(err))
+
     }
 
     return { books ,book ,goToBook ,getBooks ,getBook }
