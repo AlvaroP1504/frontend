@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #3e3e3e;
+/* Crear un estilo global que centre el contenido de toda la pagina */
+html, body {
+  background-color: #141f31;/*101927*/
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
 }

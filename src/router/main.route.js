@@ -1,10 +1,10 @@
-const HelloWorld = () => import('../components/HelloWorld.vue')
-const App = () => import('../App.vue')
+const BookList = () => import('../view/BookList.vue')
+const BookDetail = () => import('../view/BookDetail.vue')
 
 const routes = [
     { path: "/", redirect: "/books" },
-    { path: "/books", component: App},
-    { path: "/hello-world", component: HelloWorld },
+    { path: "/books", component: BookList},
+    { path: "/book/:id", component: BookDetail },
 ];
 
 export default routes;
